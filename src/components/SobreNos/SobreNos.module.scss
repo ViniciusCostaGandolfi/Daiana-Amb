@@ -1,0 +1,70 @@
+@import 'styles/breakpoints.scss';
+
+
+.sobreNos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 1rem 0 1rem;
+    background-color: #ebfce0;
+    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
+    &__titulo {
+        font-family: Roboto;
+        font-size: 3rem;
+        color: #64b844;
+    }
+
+    &__descricao {
+        font-family: Roboto;
+        color: grey;
+        text-align: justify;
+        font-size: 2rem;
+
+    }
+
+    &__MVVs {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 2rem;
+        @media (min-width: 0) and (max-width: $desktop_sm) {
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        &__MVV{
+            margin: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3%;
+            border-radius: 1rem;
+            box-shadow: rgba(4, 238, 16, 0.25) 0px 30px 60px -12px inset, rgba(12, 61, 0, 0.3) 0px 18px 36px -18px inset;
+            width: 30%;
+            @media (min-width: 0) and (max-width: $desktop_sm) {
+                width: 90%;
+            }
+            
+
+            &__icone {
+                color: #64b844;
+            }
+            &__titulo {
+                margin: 2rem 0;
+                font-family: Roboto;
+                font-size: 2rem;
+                color: #64b844;
+
+            }
+            &__descricao {
+                font-family: Roboto;
+                font-size: 1.5rem;
+                color: grey;
+            }
+        }
+    }
+}

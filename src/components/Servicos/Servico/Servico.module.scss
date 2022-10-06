@@ -1,0 +1,56 @@
+@import 'styles/breakpoints.scss';
+
+
+.servico {
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+	margin: 2%;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    @media (max-width: $mobile) {
+        width: 94%;
+    }
+    @media (min-width: $mobile) and (max-width: $desktop_xsm) {
+        width: 43%;
+    }
+    @media (min-width: $desktop_xsm){
+        width: 27%;
+    }
+
+    
+
+
+    &__conteudo {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: space-between;
+        &__titulo {
+            font-size: 1.5rem;
+            color: rgb(165, 198, 57);
+            padding: 0px 0.5rem;
+        }
+        &__descricao {
+            font-size: 1.25rem;
+            color: grey;
+            margin: 1rem;
+        }
+        &__botao {
+            color: #f9f9f9;
+            background-color: #a5c639;
+            padding: 1rem;
+            border-radius: 0 0 1rem 1rem;
+            transition: 0.5s;
+            font-size: 1.5rem;
+            border-style: none;
+
+            
+        }
+        
+    }
+}

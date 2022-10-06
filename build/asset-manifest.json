@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9636f08b.css",
+    "main.js": "/static/js/main.9a1307f0.js",
+    "static/media/engenharia.jpg": "/static/media/engenharia.211524ba79c14fb88a37.jpg",
+    "static/media/banner-inicio.jpg": "/static/media/banner-inicio.3ffde573e3d1b563ccd2.jpg",
+    "static/media/logoDaiana.svg": "/static/media/logoDaiana.be43b0ff89241596837657908f8d776f.svg",
+    "index.html": "/index.html",
+    "main.9636f08b.css.map": "/static/css/main.9636f08b.css.map",
+    "main.9a1307f0.js.map": "/static/js/main.9a1307f0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9636f08b.css",
+    "static/js/main.9a1307f0.js"
+  ]
+}

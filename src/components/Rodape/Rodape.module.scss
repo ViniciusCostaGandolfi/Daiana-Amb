@@ -1,0 +1,73 @@
+@import 'styles/breakpoints.scss';
+
+
+
+.rodape {
+    padding-bottom: 3rem;
+    &__titulo {
+        font-family: Roboto;
+        font-size: 3rem;
+        color: #64b844;
+        text-align: center;
+        padding: 4rem 0 0 0 ;
+    }
+    &__descricao {
+        font-family: Roboto;
+        text-align: center;
+        color: grey;
+        font-size: 2rem;
+    }
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (min-width: 0) and (max-width: $mobile) {
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        
+
+        &__logo {
+            width: 40%;
+            height: auto;
+            @media (min-width: 0) and (max-width: $mobile) {
+                width: 100%;
+            }
+        }
+
+        &__lista {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &__item {
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+
+            @media (min-width: 0) and (max-width: $mobile) {
+                font-size: 1.25rem;
+            }
+            
+            
+            &__ancora {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: #333333;
+                transition: 0.5s;
+
+                &:hover {
+                    color: #64b844;
+                }
+            }
+        }
+    }
+
+}

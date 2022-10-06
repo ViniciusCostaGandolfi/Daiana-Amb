@@ -1,0 +1,31 @@
+@import 'styles/breakpoints.scss';
+
+
+.sessao__servicos {
+    text-align: center;
+    padding: 3rem 0px;
+}
+
+.servicos {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Roboto;
+    padding-bottom: 5rem;
+    justify-content: space-between;
+    
+    &__sobre {
+        
+        &__titulo {
+            font-family: Roboto;
+            font-size: 3rem;
+            color: #a5c639;
+        }
+
+        &__descriçao {
+            font-family: Roboto;
+            font-size: 1.5rem;
+            color: grey;
+        }
+    }
+}
+

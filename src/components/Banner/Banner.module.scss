@@ -1,0 +1,29 @@
+@import 'styles/breakpoints.scss';
+
+
+.banner {
+    display: flex;
+    &__imagem {
+        align-items: center;
+        background-image: url("/assets/banner-inicio.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        height: 50vh;
+        width: 100%;
+        justify-content: center;
+    }
+    
+  
+    &__titulo {
+        padding: 0rem 2rem;
+        text-align: center;
+        color: white;
+        font-size: 5rem;
+        flex-grow: 1;
+
+        @media (min-width: 0) and (max-width: $desktop_sm) {
+            font-size: 2.5rem;
+        }
+    }
+  }

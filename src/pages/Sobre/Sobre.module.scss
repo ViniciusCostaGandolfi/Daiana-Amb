@@ -1,0 +1,54 @@
+@import 'styles/breakpoints.scss';
+
+.sobre {
+    &__DNA {
+        background-color: #ebebeb;
+        margin: 1rem;
+        padding: 1rem;
+        color: #061d24;
+        border-radius: 1rem;
+        display: flex;
+        @media (min-width: 0) and (max-width: $mobile) {
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        &__texto {
+            text-align: justify;
+            width: 50%;
+            @media (min-width: 0) and (max-width: $mobile) {
+                width: 100%;
+            }
+            
+            &__titulo {
+                font-size: 4rem;
+                color: #333333;
+            }
+            &__descricao {
+                font-size: 2rem;
+                color: #333333;
+    
+            }
+        }
+        &__imagem {
+            border-radius: 1rem;
+            margin-left: 2%;
+            background-image: url("/assets/engenharia.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100%;
+            min-width: 48%;
+            display: flex;
+            align-items: center;
+            @media (min-width: 0) and (max-width: $mobile) {
+                min-height: 50vh
+            }
+            &__icone {
+                width: 50%;
+                height: 50%;
+                color: #2d582fa1;
+                flex-grow: 1;
+
+            }
+        }
+    }
+}

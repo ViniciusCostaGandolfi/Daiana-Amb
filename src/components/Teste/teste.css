@@ -1,0 +1,16 @@
+.caixas {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 0;
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(174, 70, 206);
+    border-radius: 1rem;
+    color: #fdfdfd;
+    font-size: 3rem;
+    width: 500px;
+    height: 500px;
+}

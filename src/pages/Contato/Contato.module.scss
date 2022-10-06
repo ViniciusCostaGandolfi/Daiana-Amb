@@ -1,0 +1,20 @@
+.mapaContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    &__titulo {
+        padding: 1rem 0;
+        font-size: 3rem;
+        color: #64b844;
+    }
+    &__mapa {
+        width: 90%;
+        height: 40vh;
+        border: none;
+
+    }
+}

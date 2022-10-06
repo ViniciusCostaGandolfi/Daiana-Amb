@@ -1,0 +1,36 @@
+@import 'styles/breakpoints.scss';
+
+
+.sobreNos__MVVs {
+    &__MVV{
+        
+        margin: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3%;
+        border-radius: 1rem;
+        box-shadow: rgba(4, 238, 16, 0.25) 0px 30px 60px -12px inset, rgba(12, 61, 0, 0.3) 0px 18px 36px -18px inset;
+        
+        @media (min-width: 0) and (max-width: $desktop_sm) {
+            width: 90%;
+        }
+        
+
+        &__icone {
+            color: #64b844;
+        }
+        &__titulo {
+            margin: 2rem 0;
+            font-family: Roboto;
+            font-size: 2rem;
+            color: #64b844;
+
+        }
+        &__descricao {
+            font-family: Roboto;
+            font-size: 1.5rem;
+            color: grey;
+        }
+    }
+}

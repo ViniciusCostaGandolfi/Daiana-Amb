@@ -1,0 +1,25 @@
+
+.custom {
+  display: flex;
+  justify-content: center;
+  transition-duration: 1s;
+}
+
+.slide-enter {
+  opacity: 0;
+  margin-left: -100%;
+  &-active {
+    opacity: 1;
+    margin-left: 0;
+    transition: 500ms ease-in;
+  }
+}
+.slide-exit {
+  opacity: 1;
+  margin-left: 0;
+  &-active {
+    opacity: 0;
+    margin-left: 100%;
+    transition: 500ms ease-in;
+  }
+}

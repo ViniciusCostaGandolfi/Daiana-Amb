@@ -24,7 +24,7 @@ export default function MVV(props: Props) {
     const [ref, inView] = useInView();
     let contador = 0;
     useEffect(() => {
-        if (contador == 0) {
+        if (contador === 0) {
             control.start('visible');
         } else {
             control.start('hidden');

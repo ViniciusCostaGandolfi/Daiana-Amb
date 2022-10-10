@@ -31,10 +31,14 @@ function Servico(props: Props) {
     return (
         <motion.div 
             className={styles['servico']}
-            ref={ref}
-            variants={boxVariant}
-            initial='hidden'
-            animate={control}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.3 }}
+            variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 }
+      }}
         >
             <div  className={styles['servico__conteudo']}>
                 <h1  className={styles['servico__conteudo__titulo']}> {titulo} </h1>

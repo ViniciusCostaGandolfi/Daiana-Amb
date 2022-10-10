@@ -20,12 +20,12 @@ function Servico(props: Props) {
     const [ref, inView] = useInView();
     let contador = 0;
     useEffect(() => {
-        if (contador <= 2) {
+        if (inView) {
             control.start('visible');
         } else {
             control.start('hidden');
         }
-        contador += 1;
+        cobtador += 1;
     }, [control, inView]);
 
     return (

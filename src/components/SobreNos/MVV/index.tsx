@@ -22,14 +22,12 @@ export default function MVV(props: Props) {
     };
     const control = useAnimation();
     const [ref, inView] = useInView();
-    let contador = 0;
+
     useEffect(() => {
-        if (contador === 0) {
+        if (inView) {
             control.start('visible');
-        } else {
-            control.start('hidden');
         }
-        contador += 1;
+
     }, [control, inView]);
 
 

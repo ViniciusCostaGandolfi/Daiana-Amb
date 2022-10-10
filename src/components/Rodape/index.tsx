@@ -16,7 +16,7 @@ function Rodape(){
                 Contato
             </h2>
             <p className={styles['rodape__descricao']}>
-                Nosso horario de atendimento começa as 8:30 e termina as 17:30.
+                Nosso horátio de atendimento é das 8:30 as 17:30.
             </p>
 
             <address className={styles['rodape__container']}>

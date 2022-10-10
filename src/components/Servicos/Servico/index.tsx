@@ -13,8 +13,8 @@ function Servico(props: Props) {
     const {titulo, descricao, icone} = props;
 
     const boxVariant = {
-        visible: { opacity: 1, scale: 1 },
-        hidden: { opacity: 0, scale: 0 },
+        visible: { opacity: 1, y: 0, transition: {duration: 0.8} },
+        hidden: { opacity: 0, y: 150 },
     };
     const control = useAnimation();
     const [ref, inView] = useInView();

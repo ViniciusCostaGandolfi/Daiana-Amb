@@ -13,14 +13,14 @@ function Servico(props: Props) {
     const {titulo, descricao, icone} = props;
 
     const boxVariant = {
-        visible: { opacity: 1, transition: {duration: 0.8} },
-        hidden: { opacity: 0 },
+        visible: { opacity: 1, scale: 1, transition: {duration: 0.8} },
+        hidden: { opacity: 0, scale: 0 },
     };
     const control = useAnimation();
     const [ref, inView] = useInView();
     let contador = 0;
     useEffect(() => {
-        if (inView) {
+        if (contador === 0) {
             control.start('visible');
         } else {
             control.start('hidden');
@@ -31,14 +31,10 @@ function Servico(props: Props) {
     return (
         <motion.div 
             className={styles['servico']}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            variants={{
-            visible: { opacity: 1, x: 0 },
-            hidden: { opacity: 0, x: -150 }
-      }}
+            ref={ref}
+            variants={boxVariant}
+            initial='hidden'
+            animate={control}
         >
             <div  className={styles['servico__conteudo']}>
                 <h1  className={styles['servico__conteudo__titulo']}> {titulo} </h1>

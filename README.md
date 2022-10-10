@@ -1,4 +1,4 @@
-# G-Studies
+# DAIANA AMBIENTAL
 
 O intuito deste projeto é fazer uma aplicação frontend utilizando 
 React, as metodologia BEM e Dont Repeat Yourself. 

@@ -13,7 +13,7 @@ function Servico(props: Props) {
     const {titulo, descricao, icone} = props;
 
     const boxVariant = {
-        visible: { opacity: 1, scale: 1, transition: {duration: 0.8} },
+        visible: { opacity: 1, scale: 1 },
         hidden: { opacity: 0, scale: 0 },
     };
     const control = useAnimation();

@@ -13,7 +13,7 @@ function AppRouter() {
     return (
         <Router>
             <Menu />
-            <WhatsApp />
+            //<WhatsApp />
             <Banner />
             <Routes>
                 <Route path="/" element={<Inicio />}/>

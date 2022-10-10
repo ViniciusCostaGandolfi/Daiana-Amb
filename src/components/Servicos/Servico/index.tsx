@@ -25,7 +25,7 @@ function Servico(props: Props) {
         } else {
             control.start('hidden');
         }
-        cobtador += 1;
+        contador += 1;
     }, [control, inView]);
 
     return (

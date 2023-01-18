@@ -19,7 +19,7 @@ function Banner() {
                     initial='hidden'
                     animate='visible'
                 >
-                    <h1 className={styles['banner__titulo']}>Engenharia e Gestão Abiental <br/> Convivendo em Harmonia</h1>
+                    <h1 className={styles['banner__titulo']}>Engenharia e Gestão Ambiental <br/> Convivendo em Harmonia</h1>
                 </motion.div>
                 
             </div>

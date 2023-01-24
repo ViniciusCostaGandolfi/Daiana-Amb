@@ -8,7 +8,7 @@ import { faFileLines,  } from '@fortawesome/free-regular-svg-icons';
 const servicosOferecidos = [
     {
         'id': 0,
-        'titulo': 'Licencimento Ambiental de Estabelecimentos',
+        'titulo': 'Licenciamento Ambiental de Estabelecimentos',
         'descricao': 'Regularização do licencimento ambiental de estabelecimentos',
         'icone': faFileLines
     }, 

@@ -38,10 +38,10 @@ function Rodape(){
                         </a>
                     </li>
                     <li className={styles['rodape__container__item']}>
-                        <a className={styles['rodape__container__item__ancora']} href='https://goo.gl/maps/PtW6A1hwDgVWfDKC9' target="_blank" rel="noreferrer">
+                        <a className={styles['rodape__container__item__ancora']} href='https://goo.gl/maps/B3yHzR9aD6tC6my58' target="_blank" rel="noreferrer">
                             <FontAwesomeIcon size={'lg'} icon={faLocationDot} />
-                            Rua Boa Vista, 238, <br/>
-                            Boa Vista, Limeira-SP
+                            Rua Estanislau Bonk Filho, 49 <br/>
+                            Jardim Bandeirantes. Limeira-SP
                         </a>
                     </li>
                 </ul>
